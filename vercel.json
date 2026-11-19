@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "functions": {
+    "api/spotify.js": {
+      "maxDuration": 30
+    },
+    "api/lyrics.js": {
+      "maxDuration": 12
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
